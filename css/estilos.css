@@ -1,0 +1,164 @@
+/*
+#  ·················
+#  ··_______________
+#  ·/·___/·___/·___/
+#  /·/__(__··|__··)·
+#  \___/____/____/··
+#  ·················
+*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+/* Variables */
+:root{
+  --green-color:#7ACC2D;
+  --white-color: white;
+  --black-color: #313337;
+  /* espaciado */
+  --space: 10px;
+  /* tipografia */
+  --normal: 12px;
+  --box: 0 0 2px 1px #e6e5e9;
+}
+/* End Variables */
+
+html,body{
+  padding:0px;
+  margin:0px;
+  font-size: var(--normal);
+  font-family: 'Open Sans', sans-serif;;
+}
+
+
+nav{
+  display: flex;
+  background-color: var(--green-color);
+  padding: var(--space);
+  color: var(--white-color);
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul{
+  display: flex;
+}
+
+nav li{
+  padding-left: 20px;
+  list-style: none;
+
+}
+
+nav li a{
+  color: var(--black-color);
+  text-decoration: none;
+}
+
+nav li a:hover{
+  color: var(--white-color);
+}
+
+/* ------------------------ Main section */
+h2{
+  font-size: 2em;
+  text-align: center;
+  margin: 0;
+}
+
+.main_section{
+  padding: 10%;
+  text-align: center;
+}
+
+.products{
+  background-image: url("../images/curve.png");
+  max-height: 50px;
+  background-size: cover;
+  background-position: center top;
+  padding:20%;
+  display: flex;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.product{
+  padding: var(--space);
+  margin-top: -400px;
+}
+.product .content{
+  background-color:var(--white-color);
+  padding: var(--space);
+  box-shadow: var(--box);
+  border-radius: 5px;
+}
+.img_content{
+  text-align: center;
+}
+
+.main_button{
+  background-color: var(--green-color);
+  color: var(--white-color);
+  width: 100%;
+  padding: var(--space);
+  font-size: 17px;
+  color: white;
+  border: 0;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.main_button:hover{
+  background-color: #5e9e22;
+}
+
+.features{
+  padding:5%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  gap: 85px;
+}
+
+.feature{
+  max-width: 200px;
+}
+
+.feature img{
+  max-height: 100px;
+}
+
+.mentions{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 5%;
+  gap: 10px;
+}
+
+.mention{
+  box-shadow: var(--box);
+  max-width: 200px;
+}
+
+.mention .img_content img{
+  max-width: 200px;
+}
+
+.mention h3,p{
+  margin: 0 10px 10px;
+  text-align: justify;
+}
+
+footer{
+  background-color: var(--black-color);
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 2%;
+}
+
+footer h4{
+  color: white;
+  font-weight: normal;
+
+}
+
